@@ -1,0 +1,64 @@
+body{
+    font-size: 15px;
+    
+}
+#superior{
+    color:hsl(300, 43%, 22%);
+    top: 0;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+}
+.flotantes{
+    float: left;
+}
+#left{
+    width: 35%;
+    height: 45%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#left div h1{
+    font-size: 50px;
+}
+#right{
+    width: 40%;
+    height: 45%;
+    margin-left: 10%;
+    margin-top: 9%;
+}
+#txtEstrellas{
+    margin-left: 30px;
+    margin-top: -21px;
+}
+.estrellas{
+    display: inline-block;
+    padding: 17px 50px 0 20px;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 18px;
+    border-radius: 10px;   
+}
+#estrella1{
+    margin-left: -50px;
+}
+#estrella3{
+    margin-left: 50px;
+}
+
+.tarjetas{
+    background-color: hsl(300, 43%, 22%);
+    width: 10%;
+    margin-bottom: 0;
+}
+
+
+#inferior{
+    width: 100%;
+    height: 50%;
+    bottom:0;
+    position: absolute;
+}
+
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
