@@ -1,64 +1,198 @@
+
+
+@font-face { font-family: "Spartan";  
+    src: url('https://fonts.google.com/specimen/Spartan') 
+}
 body{
     font-size: 15px;
+    font-family: Spartan, cursive;
+}
+
+
+
+
+
+/****************mostly fluid****************/
+@media (min-width: 375px) {
+    #superior{
+        color:hsl(300, 43%, 22%);
+        top: 0;
+        background-image: url("images/bg-pattern-top-mobile.svg");
+        background-repeat: no-repeat;
+        justify-content: center;
+        text-align: center;
+        margin: 12px;
+        margin-bottom: 50px;
+        margin-top: -20px;
+        padding-top: 20px;
+        margin-right: -5px;
+        padding-right: 17px;
+    }
+    #inferior{
+        bottom:0;
+        justify-content: center;
+        background-image: url("images/bg-pattern-bottom-mobile.svg");
+        background-repeat: no-repeat;
+        background-position-x: 280px;
+        background-position-y: -200px;
+        margin: 12px;
+    
+    }
+    .tarjetas{
+        background-color: hsl(300, 43%, 22%);
+        height: 237px;
+        margin-bottom: 0;
+        border-radius: 10px;
+        margin-top: 3%;
+    
+    }
+    #txtEstrellas{
+        margin-left: 30px;
+        margin-top: -21px;
+    }
+    .estrellas{
+        display: inline-block;
+        padding: 17px 50px 0 30px;
+        background-color: hsl(300, 24%, 96%);
+        margin-top: 18px;
+        border-radius: 10px;   
+    }
+    #contenidoTarjetaSuperior{
+        display: inline-block;
+        margin: 30px 0 0 30px;
+    }
+    #contenidoTarjetaSuperior div img{
+        border-radius: 50px;
+        width: 50px;
+        margin-top: 11px;
+    }
+    #contenidoTarjetaSuperior div #nombre{
+        color: hsl(0, 0%, 100%);
+        margin-left: 27px;
+        font-weight: bold;
+    }
+    #contenidoTarjetaSuperior div #Verified{
+        color:hsl(333, 80%, 67%);
+        margin-left: 27px;
+        margin-top: -11px;
+        font-weight: lighter;
+    }
+    #contenidoTarjetaInferior{
+        display: inline-block;
+        color: hsl(0, 0%, 100%);
+        margin: -5px 18px 0 21px;
+    }
+    .flot{
+        float: left;
+    }
+    
     
 }
-#superior{
-    color:hsl(300, 43%, 22%);
-    top: 0;
-    width: 100%;
-    height: 50%;
-    position: absolute;
-}
-.flotantes{
-    float: left;
-}
-#left{
-    width: 35%;
-    height: 45%;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-#left div h1{
-    font-size: 50px;
-}
-#right{
-    width: 40%;
-    height: 45%;
-    margin-left: 10%;
-    margin-top: 9%;
-}
-#txtEstrellas{
-    margin-left: 30px;
-    margin-top: -21px;
-}
-.estrellas{
-    display: inline-block;
-    padding: 17px 50px 0 20px;
-    background-color: hsl(300, 24%, 96%);
-    margin-bottom: 18px;
-    border-radius: 10px;   
-}
-#estrella1{
-    margin-left: -50px;
-}
-#estrella3{
-    margin-left: 50px;
-}
 
-.tarjetas{
-    background-color: hsl(300, 43%, 22%);
-    width: 10%;
-    margin-bottom: 0;
+@media (min-width: 1440px) {
+    .flotantes{
+        float: left;
+    }
+    #superior{
+        color:hsl(300, 43%, 22%);
+        top: 0;
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        background-image: url("images/bg-pattern-top-desktop.svg");
+        background-repeat: no-repeat;
+
+        text-align: left;
+    }
+    #left{
+        width: 35%;
+        height: 45%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    #left div h1{
+        font-size: 50px;
+    }
+    #right{
+        width: 40%;
+        height: 45%;
+        margin-left: 10%;
+        margin-top: 9%;
+    }
+    .tarjetas{
+        background-color: hsl(300, 43%, 22%);
+        width: 381px;
+        height: 237px;
+        margin-bottom: 0;
+        float: left;
+        margin-right: 28px;
+        border-radius: 10px;
+        margin-top: 9%;
+    
+    }
+    #inferior{
+        width: 100%;
+        height: 50%;
+        bottom:0;
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        background-image: url("images/bg-pattern-bottom-desktop.svg");
+        background-repeat: no-repeat;
+        background-position-x: 280px;
+        background-position-y: -200px;
+    
+    }
+    #tarjeta1{
+        margin-top:4%;
+    }
+    #tarjeta2{
+        margin-top: 5%;
+    }
+    #tarjeta3{
+        margin-top: 6%;
+    }
+    #contenidoTarjetaSuperior{
+        display: inline-block;
+        margin: 30px 0 0 30px;
+    }
+    #contenidoTarjetaSuperior div img{
+        border-radius: 50px;
+        width: 50px;
+        margin-top: 11px;
+    }
+    #contenidoTarjetaSuperior div #nombre{
+        color: hsl(0, 0%, 100%);
+        margin-left: 27px;
+        font-weight: bold;
+    }
+    #contenidoTarjetaSuperior div #Verified{
+        color:hsl(333, 80%, 67%);
+        margin-left: 27px;
+        margin-top: -11px;
+        font-weight: lighter;
+    }
+    #contenidoTarjetaInferior{
+        display: inline-block;
+        color: hsl(0, 0%, 100%);
+        margin: -5px 30px 0 30px;
+    }
+    #txtEstrellas{
+        margin-left: 30px;
+        margin-top: -21px;
+    }
+    .estrellas{
+        display: inline-block;
+        padding: 17px 50px 0 20px;
+        background-color: hsl(300, 24%, 96%);
+        margin-bottom: 18px;
+        border-radius: 10px;   
+    }
+    #estrella1{
+        margin-left: -50px;
+    }
+    #estrella3{
+        margin-left: 50px;
+    }
+    
 }
-
-
-#inferior{
-    width: 100%;
-    height: 50%;
-    bottom:0;
-    position: absolute;
-}
-
-
-Very Dark Magenta: hsl(300, 43%, 22%)
-Soft Pink: hsl(333, 80%, 67%)
