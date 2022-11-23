@@ -4,29 +4,30 @@
     src: url('https://fonts.google.com/specimen/Spartan') 
 }
 body{
-    font-size: 15px;
     font-family: Spartan, cursive;
+    background: white;
+    margin:0;height: 100vh;display: flex;
+    flex-direction: column;
 }
 
 
 
+.attribution {
+    text-align: center;
+}
 
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 /****************mostly fluid****************/
-@media (min-width: 375px) {
+@media (min-width: 300px) {
     #superior{
         color:hsl(300, 43%, 22%);
-        top: 0;
         background-image: url("images/bg-pattern-top-mobile.svg");
         background-repeat: no-repeat;
         justify-content: center;
         text-align: center;
-        margin: 12px;
-        margin-bottom: 50px;
-        margin-top: -20px;
-        padding-top: 20px;
-        margin-right: -5px;
-        padding-right: 17px;
     }
     #inferior{
         bottom:0;
@@ -89,58 +90,52 @@ body{
     
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .flotantes{
         float: left;
     }
     #superior{
         color:hsl(300, 43%, 22%);
-        top: 0;
         width: 100%;
         height: 50%;
-        position: absolute;
         background-image: url("images/bg-pattern-top-desktop.svg");
         background-repeat: no-repeat;
 
+        display: inline-flex;
+        align-items: center;
         text-align: left;
     }
     #left{
         width: 35%;
         height: 45%;
         margin-left: 10%;
-        margin-top: 5%;
     }
     #left div h1{
-        font-size: 50px;
+        font-size: 3.1vw;
     }
     #right{
         width: 40%;
         height: 45%;
         margin-left: 10%;
-        margin-top: 9%;
     }
-    .tarjetas{
-        background-color: hsl(300, 43%, 22%);
-        width: 381px;
-        height: 237px;
+    .tarjetas{background-color: hsl(300, 43%, 22%);
+        width: 24vw;
+        height: 18vw;
         margin-bottom: 0;
         float: left;
-        margin-right: 28px;
-        border-radius: 10px;
-        margin-top: 9%;
+        margin-right: 2vw;
+        border-radius: 1vw;
     
     }
     #inferior{
         width: 100%;
         height: 50%;
-        bottom:0;
-        position: absolute;
         justify-content: center;
         display: flex;
         background-image: url("images/bg-pattern-bottom-desktop.svg");
         background-repeat: no-repeat;
-        background-position-x: 280px;
-        background-position-y: -200px;
+        background-position-x: 17.5vw;
+        background-position-y: -12.5vw;
     
     }
     #tarjeta1{
@@ -154,45 +149,49 @@ body{
     }
     #contenidoTarjetaSuperior{
         display: inline-block;
-        margin: 30px 0 0 30px;
+        margin: 1.9vw 0 0 1.9vw;
     }
     #contenidoTarjetaSuperior div img{
-        border-radius: 50px;
-        width: 50px;
-        margin-top: 11px;
+        border-radius: 3.1vw;
+        width: 3.1vw;
+        margin-top: .7vw;
     }
     #contenidoTarjetaSuperior div #nombre{
         color: hsl(0, 0%, 100%);
-        margin-left: 27px;
+        margin-left: 1.7vw;
         font-weight: bold;
     }
     #contenidoTarjetaSuperior div #Verified{
         color:hsl(333, 80%, 67%);
-        margin-left: 27px;
-        margin-top: -11px;
+        margin-left: 1.7vw;
+        margin-top: -.7vw;
         font-weight: lighter;
     }
     #contenidoTarjetaInferior{
         display: inline-block;
         color: hsl(0, 0%, 100%);
-        margin: -5px 30px 0 30px;
+        margin: -.4vw 1.9vw 0 1.9vw;
     }
     #txtEstrellas{
-        margin-left: 30px;
-        margin-top: -21px;
+        margin-left: 1.9vw;
+        margin-top: -1.3vw;
     }
     .estrellas{
         display: inline-block;
-        padding: 17px 50px 0 20px;
+        padding: 1vw 1.9vw 0 1.3vw;
         background-color: hsl(300, 24%, 96%);
-        margin-bottom: 18px;
-        border-radius: 10px;   
+        margin-bottom: 1.1vw;
+        border-radius: .75vw;   
     }
     #estrella1{
-        margin-left: -50px;
+        margin-left: -3.1vw;
     }
     #estrella3{
-        margin-left: 50px;
-    }
-    
+        margin-left: 3.1vw;
+}
+body{
+    font-size: 1vw;
+
+}
+    main{margin:auto;}
 }
